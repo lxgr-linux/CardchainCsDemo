@@ -1,6 +1,14 @@
+using System;
+using System.Net;
+using System.Net.Http;
+using System.Threading;
 using CardchainCs.CardchainClient;
 using Google.Protobuf;
 using UnityEngine;
+using Grpc.Net.Client;
+using Grpc.Net.Client.Web;
+using Grpc.Core;
+using Cosmcs.Client;
 
 public class Chain : MonoBehaviour
 {
@@ -16,7 +24,13 @@ public class Chain : MonoBehaviour
             189, 104, 186, 17
         };  // Place byte publikKey here
 
-        var ccClient = new CardchainClient("http://lxgr.xyz:9090", "Testnet3", hex);
+        var options = new EasyClientOptions{
+            GrpcChannelOptions = new GrpcChannelOptions{
+                HttpHandler = new GrpcWebHandler(GrpcWebMode.GrpcWeb, new HttpClientHandler())
+            }
+        };
+
+        var ccClient = new CardchainClient("http://lxgr.xyz:9091", "Testnet3", hex, options);
         var resp = ccClient.SendMsgBuyCardScheme("10000000000000000000", "ucredits").Result;
         Debug.Log(resp.RawResponse);
         if (resp.ResponseMessage != null)
