@@ -15,19 +15,7 @@
           }
         }
       },
-      "CardchainCs/0.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Cosmcs": "0.3.1"
-        },
-        "compile": {
-          "lib/netstandard2.1/CardchainCs.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/CardchainCs.dll": {}
-        }
-      },
-      "Cosmcs/0.3.1": {
+      "Cosmcs/0.4.0-rc3": {
         "type": "package",
         "dependencies": {
           "CardanoBech32": "0.9.1",
@@ -465,6 +453,19 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "CardchainCs/0.2.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Cosmcs": "0.4.0-rc3"
+        },
+        "compile": {
+          "bin/placeholder/CardchainCs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CardchainCs.dll": {}
+        }
       }
     }
   },
@@ -484,26 +485,14 @@
         "lib/netstandard2.0/CardanoBech32.pdb"
       ]
     },
-    "CardchainCs/0.1.0": {
-      "sha512": "4wWRHhNdb+CYLHFqdCNsDhE11mYs7pys8wWioUllsxvXrVJ2JNoLAqWMyTjfPZc25xZdbjlu5yspQDqmEw3mMA==",
+    "Cosmcs/0.4.0-rc3": {
+      "sha512": "T8ATCiZhsPXGSLrzDeKHIp8GwB/6yxgpd3o88aijio2vSgP+yC18wSiBiekXRvVPu41+A4dlAwYV+8djcEbV1g==",
       "type": "package",
-      "path": "cardchaincs/0.1.0",
+      "path": "cosmcs/0.4.0-rc3",
       "files": [
         ".nupkg.metadata",
         "README.md",
-        "cardchaincs.0.1.0.nupkg.sha512",
-        "cardchaincs.nuspec",
-        "lib/netstandard2.1/CardchainCs.dll"
-      ]
-    },
-    "Cosmcs/0.3.1": {
-      "sha512": "w+6H548WEY+MLg3NWTfNF0BhYrewkbtjGG+94UlRfYV4rN1RX7sucT5zuV/U9bEO0prek1s9K8xKUh8N2DrEVg==",
-      "type": "package",
-      "path": "cosmcs/0.3.1",
-      "files": [
-        ".nupkg.metadata",
-        "README.md",
-        "cosmcs.0.3.1.nupkg.sha512",
+        "cosmcs.0.4.0-rc3.nupkg.sha512",
         "cosmcs.nuspec",
         "lib/netstandard2.1/Cosmcs.dll"
       ]
@@ -1188,11 +1177,17 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "CardchainCs/0.2.0": {
+      "type": "project",
+      "path": "../../CardchainCs/CardchainCs.csproj",
+      "msbuildProject": "../../CardchainCs/CardchainCs.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "CardchainCs >= 0.1.0",
+      "CardchainCs >= 0.2.0",
+      "Cosmcs >= 0.4.0-rc3",
       "Grpc.Net.Client.Web >= 2.57.0",
       "Microsoft.Extensions.Logging.Console >= 7.0.0"
     ]
@@ -1221,7 +1216,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/arch/projects/CosmosC#/CardchainCs/CardchainCs.csproj": {
+              "projectPath": "/home/arch/projects/CosmosC#/CardchainCs/CardchainCs.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1234,9 +1233,9 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
-          "CardchainCs": {
+          "Cosmcs": {
             "target": "Package",
-            "version": "[0.1.0, )"
+            "version": "[0.4.0-rc3, )"
           },
           "Grpc.Net.Client.Web": {
             "target": "Package",

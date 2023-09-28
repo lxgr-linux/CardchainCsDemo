@@ -4,6 +4,65 @@
     "/home/arch/projects/CosmosC#/CardchainCsDemo/src/CardchainCsDemo.csproj": {}
   },
   "projects": {
+    "/home/arch/projects/CosmosC#/CardchainCs/CardchainCs.csproj": {
+      "version": "0.2.0",
+      "restore": {
+        "projectUniqueName": "/home/arch/projects/CosmosC#/CardchainCs/CardchainCs.csproj",
+        "projectName": "CardchainCs",
+        "projectPath": "/home/arch/projects/CosmosC#/CardchainCs/CardchainCs.csproj",
+        "packagesPath": "/home/arch/.nuget/packages/",
+        "outputPath": "/home/arch/projects/CosmosC#/CardchainCs/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/arch/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Cosmcs": {
+              "target": "Package",
+              "version": "[0.4.0-rc3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/arch/projects/CosmosC#/CardchainCsDemo/src/CardchainCsDemo.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +84,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/arch/projects/CosmosC#/CardchainCs/CardchainCs.csproj": {
+                "projectPath": "/home/arch/projects/CosmosC#/CardchainCs/CardchainCs.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -38,9 +101,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "CardchainCs": {
+            "Cosmcs": {
               "target": "Package",
-              "version": "[0.1.0, )"
+              "version": "[0.4.0-rc3, )"
             },
             "Grpc.Net.Client.Web": {
               "target": "Package",

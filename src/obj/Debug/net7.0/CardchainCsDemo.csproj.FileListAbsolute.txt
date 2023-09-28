@@ -118,3 +118,5 @@
 /home/arch/projects/CosmosC#/CardchainCsDemo/src/obj/Debug/net7.0/CardchainCsDemo.pdb
 /home/arch/projects/CosmosC#/CardchainCsDemo/src/obj/Debug/net7.0/CardchainCsDemo.genruntimeconfig.cache
 /home/arch/projects/CosmosC#/CardchainCsDemo/src/obj/Debug/net7.0/ref/CardchainCsDemo.dll
+/home/arch/projects/CosmosC#/CardchainCsDemo/src/bin/Debug/net7.0/Grpc.Net.Client.Web.dll
+/home/arch/projects/CosmosC#/CardchainCsDemo/src/bin/Debug/net7.0/CardchainCs.pdb

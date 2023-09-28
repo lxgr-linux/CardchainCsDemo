@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v7.0": {
       "CardchainCsDemo/1.0.0": {
         "dependencies": {
-          "CardchainCs": "0.1.0",
+          "CardchainCs": "0.2.0",
+          "Cosmcs": "0.4.0-rc3",
+          "Grpc.Net.Client.Web": "2.57.0",
           "Microsoft.Extensions.Logging.Console": "7.0.0"
         },
         "runtime": {
@@ -23,18 +25,7 @@
           }
         }
       },
-      "CardchainCs/0.1.0": {
-        "dependencies": {
-          "Cosmcs": "0.3.1"
-        },
-        "runtime": {
-          "lib/netstandard2.1/CardchainCs.dll": {
-            "assemblyVersion": "0.1.0.0",
-            "fileVersion": "0.1.0.0"
-          }
-        }
-      },
-      "Cosmcs/0.3.1": {
+      "Cosmcs/0.4.0-rc3": {
         "dependencies": {
           "CardanoBech32": "0.9.1",
           "Cryptography.ECDSA.Secp256K1": "1.1.3",
@@ -45,8 +36,8 @@
         },
         "runtime": {
           "lib/netstandard2.1/Cosmcs.dll": {
-            "assemblyVersion": "0.3.1.0",
-            "fileVersion": "0.3.1.0"
+            "assemblyVersion": "0.4.0.0",
+            "fileVersion": "0.4.0.0"
           }
         }
       },
@@ -133,6 +124,14 @@
           "lib/net7.0/Grpc.Net.Client.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.55.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Client.Web/2.57.0": {
+        "runtime": {
+          "lib/net7.0/Grpc.Net.Client.Web.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.57.0.0"
           }
         }
       },
@@ -297,6 +296,14 @@
         "dependencies": {
           "System.Text.Encodings.Web": "7.0.0"
         }
+      },
+      "CardchainCs/0.2.0": {
+        "dependencies": {
+          "Cosmcs": "0.4.0-rc3"
+        },
+        "runtime": {
+          "CardchainCs.dll": {}
+        }
       }
     }
   },
@@ -313,19 +320,12 @@
       "path": "cardanobech32/0.9.1",
       "hashPath": "cardanobech32.0.9.1.nupkg.sha512"
     },
-    "CardchainCs/0.1.0": {
+    "Cosmcs/0.4.0-rc3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4wWRHhNdb+CYLHFqdCNsDhE11mYs7pys8wWioUllsxvXrVJ2JNoLAqWMyTjfPZc25xZdbjlu5yspQDqmEw3mMA==",
-      "path": "cardchaincs/0.1.0",
-      "hashPath": "cardchaincs.0.1.0.nupkg.sha512"
-    },
-    "Cosmcs/0.3.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-w+6H548WEY+MLg3NWTfNF0BhYrewkbtjGG+94UlRfYV4rN1RX7sucT5zuV/U9bEO0prek1s9K8xKUh8N2DrEVg==",
-      "path": "cosmcs/0.3.1",
-      "hashPath": "cosmcs.0.3.1.nupkg.sha512"
+      "sha512": "sha512-T8ATCiZhsPXGSLrzDeKHIp8GwB/6yxgpd3o88aijio2vSgP+yC18wSiBiekXRvVPu41+A4dlAwYV+8djcEbV1g==",
+      "path": "cosmcs/0.4.0-rc3",
+      "hashPath": "cosmcs.0.4.0-rc3.nupkg.sha512"
     },
     "Cryptography.ECDSA.Secp256K1/1.1.3": {
       "type": "package",
@@ -368,6 +368,13 @@
       "sha512": "sha512-cQyNEAIVs/5npjSHuCKCT5kQJm3AyOnUw7h7s2lXt9rSWC/bhCGPbNAtiFGNvKiQAYgIt4zV13BS983viZP9pg==",
       "path": "grpc.net.client/2.55.0",
       "hashPath": "grpc.net.client.2.55.0.nupkg.sha512"
+    },
+    "Grpc.Net.Client.Web/2.57.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uhrQ7GxDvCjzvKjn7GfGn27ZadcShmFRGo6MgvjY7GNvpdvtlyyu+TRLwMjXQDi8IgGLhm353VpfJX8/LpFP7Q==",
+      "path": "grpc.net.client.web/2.57.0",
+      "hashPath": "grpc.net.client.web.2.57.0.nupkg.sha512"
     },
     "Grpc.Net.Common/2.55.0": {
       "type": "package",
@@ -480,6 +487,11 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
+    },
+    "CardchainCs/0.2.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

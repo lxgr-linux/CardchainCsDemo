@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "UmNrmXepfrIwNRNgF7wk5ASdn1TqNXYB/a+WjyRYiiEAJKskvxFUD1GBRc1sRRLerrtuWU7B89gGjG8OuSA9GA==",
+  "dgSpecHash": "9aywLrblohLU1SM5iHEspKX77FwJk1vDhS2CvpKgpOwQNQ3PBUarp2NirMgHGSkYlWPGCF1KOvFd4UFAl5/BNQ==",
   "success": true,
   "projectFilePath": "/home/arch/projects/CosmosC#/CardchainCsDemo/src/CardchainCsDemo.csproj",
   "expectedPackageFiles": [
     "/home/arch/.nuget/packages/cardanobech32/0.9.1/cardanobech32.0.9.1.nupkg.sha512",
-    "/home/arch/.nuget/packages/cardchaincs/0.1.0/cardchaincs.0.1.0.nupkg.sha512",
-    "/home/arch/.nuget/packages/cosmcs/0.3.1/cosmcs.0.3.1.nupkg.sha512",
+    "/home/arch/.nuget/packages/cosmcs/0.4.0-rc3/cosmcs.0.4.0-rc3.nupkg.sha512",
     "/home/arch/.nuget/packages/cryptography.ecdsa.secp256k1/1.1.3/cryptography.ecdsa.secp256k1.1.1.3.nupkg.sha512",
     "/home/arch/.nuget/packages/devhawk.ripemd160/3.0.27/devhawk.ripemd160.3.0.27.nupkg.sha512",
     "/home/arch/.nuget/packages/google.protobuf/3.23.3/google.protobuf.3.23.3.nupkg.sha512",
