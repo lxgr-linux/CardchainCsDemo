@@ -5,7 +5,7 @@
   },
   "projects": {
     "/home/arch/projects/CosmosC#/CardchainCs/CardchainCs.csproj": {
-      "version": "0.2.0",
+      "version": "0.2.3",
       "restore": {
         "projectUniqueName": "/home/arch/projects/CosmosC#/CardchainCs/CardchainCs.csproj",
         "projectName": "CardchainCs",
@@ -40,7 +40,7 @@
           "dependencies": {
             "Cosmcs": {
               "target": "Package",
-              "version": "[0.4.0-rc3, )"
+              "version": "[0.4.3, )"
             }
           },
           "imports": [
@@ -103,7 +103,7 @@
           "dependencies": {
             "Cosmcs": {
               "target": "Package",
-              "version": "[0.4.0-rc3, )"
+              "version": "[0.4.3, )"
             },
             "Grpc.Net.Client.Web": {
               "target": "Package",

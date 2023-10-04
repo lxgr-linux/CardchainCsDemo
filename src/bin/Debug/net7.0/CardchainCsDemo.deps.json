@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "CardchainCsDemo/1.0.0": {
         "dependencies": {
-          "CardchainCs": "0.2.0",
-          "Cosmcs": "0.4.0-rc3",
+          "CardchainCs": "0.2.3",
+          "Cosmcs": "0.4.3",
           "Grpc.Net.Client.Web": "2.57.0",
           "Microsoft.Extensions.Logging.Console": "7.0.0"
         },
@@ -25,7 +25,7 @@
           }
         }
       },
-      "Cosmcs/0.4.0-rc3": {
+      "Cosmcs/0.4.3": {
         "dependencies": {
           "CardanoBech32": "0.9.1",
           "Cryptography.ECDSA.Secp256K1": "1.1.3",
@@ -36,8 +36,8 @@
         },
         "runtime": {
           "lib/netstandard2.1/Cosmcs.dll": {
-            "assemblyVersion": "0.4.0.0",
-            "fileVersion": "0.4.0.0"
+            "assemblyVersion": "0.4.3.0",
+            "fileVersion": "0.4.3.0"
           }
         }
       },
@@ -297,9 +297,9 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
-      "CardchainCs/0.2.0": {
+      "CardchainCs/0.2.3": {
         "dependencies": {
-          "Cosmcs": "0.4.0-rc3"
+          "Cosmcs": "0.4.3"
         },
         "runtime": {
           "CardchainCs.dll": {}
@@ -320,12 +320,12 @@
       "path": "cardanobech32/0.9.1",
       "hashPath": "cardanobech32.0.9.1.nupkg.sha512"
     },
-    "Cosmcs/0.4.0-rc3": {
+    "Cosmcs/0.4.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-T8ATCiZhsPXGSLrzDeKHIp8GwB/6yxgpd3o88aijio2vSgP+yC18wSiBiekXRvVPu41+A4dlAwYV+8djcEbV1g==",
-      "path": "cosmcs/0.4.0-rc3",
-      "hashPath": "cosmcs.0.4.0-rc3.nupkg.sha512"
+      "sha512": "sha512-ZydTdcDXVXX1ZGCm1/htSp7UlClubf993EQtxK2WzwPP0lcihIQu6WsCzgl4drephWtwDTRVscJ5tOhbjk1xHQ==",
+      "path": "cosmcs/0.4.3",
+      "hashPath": "cosmcs.0.4.3.nupkg.sha512"
     },
     "Cryptography.ECDSA.Secp256K1/1.1.3": {
       "type": "package",
@@ -488,7 +488,7 @@
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
-    "CardchainCs/0.2.0": {
+    "CardchainCs/0.2.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

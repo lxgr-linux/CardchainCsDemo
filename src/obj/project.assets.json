@@ -15,7 +15,7 @@
           }
         }
       },
-      "Cosmcs/0.4.0-rc3": {
+      "Cosmcs/0.4.3": {
         "type": "package",
         "dependencies": {
           "CardanoBech32": "0.9.1",
@@ -454,11 +454,11 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "CardchainCs/0.2.0": {
+      "CardchainCs/0.2.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Cosmcs": "0.4.0-rc3"
+          "Cosmcs": "0.4.3"
         },
         "compile": {
           "bin/placeholder/CardchainCs.dll": {}
@@ -485,14 +485,14 @@
         "lib/netstandard2.0/CardanoBech32.pdb"
       ]
     },
-    "Cosmcs/0.4.0-rc3": {
-      "sha512": "T8ATCiZhsPXGSLrzDeKHIp8GwB/6yxgpd3o88aijio2vSgP+yC18wSiBiekXRvVPu41+A4dlAwYV+8djcEbV1g==",
+    "Cosmcs/0.4.3": {
+      "sha512": "ZydTdcDXVXX1ZGCm1/htSp7UlClubf993EQtxK2WzwPP0lcihIQu6WsCzgl4drephWtwDTRVscJ5tOhbjk1xHQ==",
       "type": "package",
-      "path": "cosmcs/0.4.0-rc3",
+      "path": "cosmcs/0.4.3",
       "files": [
         ".nupkg.metadata",
         "README.md",
-        "cosmcs.0.4.0-rc3.nupkg.sha512",
+        "cosmcs.0.4.3.nupkg.sha512",
         "cosmcs.nuspec",
         "lib/netstandard2.1/Cosmcs.dll"
       ]
@@ -1178,7 +1178,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "CardchainCs/0.2.0": {
+    "CardchainCs/0.2.3": {
       "type": "project",
       "path": "../../CardchainCs/CardchainCs.csproj",
       "msbuildProject": "../../CardchainCs/CardchainCs.csproj"
@@ -1186,8 +1186,8 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "CardchainCs >= 0.2.0",
-      "Cosmcs >= 0.4.0-rc3",
+      "CardchainCs >= 0.2.3",
+      "Cosmcs >= 0.4.3",
       "Grpc.Net.Client.Web >= 2.57.0",
       "Microsoft.Extensions.Logging.Console >= 7.0.0"
     ]
@@ -1235,7 +1235,7 @@
         "dependencies": {
           "Cosmcs": {
             "target": "Package",
-            "version": "[0.4.0-rc3, )"
+            "version": "[0.4.3, )"
           },
           "Grpc.Net.Client.Web": {
             "target": "Package",

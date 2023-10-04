@@ -20,12 +20,22 @@ var accoutAddress = privateKey.PublicKey().AccountId("cc");
 Console.Out.WriteLine(accoutAddress);
 
 
-var ccClient = new CardchainClient("http://lxgr.xyz:9090", "Testnet3", hex);
+var ccClient = new CardchainClient("http://lxgr.xyz:9090", "cardtestnet-4", hex);
 //var resp = ccClient.SendMsgBuyCardScheme("10000000000000000000", "ucredits").Result;
 //var resp = ccClient.SendMsgCreateCollection("jaja", accoutAddress.ToString(), accoutAddress.ToString(), new string[]{}).Result;
-var resp = ccClient.SendMsgExecMsgVoteCard("cc1axyyssx639esalxq85y6whckhc42vxk5fdxw5x", 431, "overpowered").Result;
-Console.Out.WriteLine(resp.ClientResponse.RawResponse);
-foreach (var respResponseMessage in resp.ResponseMessages)
+try {
+    var resp = ccClient.SendMsgExecMsgVoteCard("cc14km80077s0hch3sh38wh2hfk7kxfau4456r3ej", 431, "overpowered").Result;
+    Console.Out.WriteLine(resp.ClientResponse.RawResponse);
+    foreach (var respResponseMessage in resp.ResponseMessages)
+    {
+        Console.Out.WriteLine(JsonFormatter.Default.Format(respResponseMessage));
+    }
+} catch
+{
+}
+var resp2 = ccClient.SendMsgExecMsgVoteCard("cc14km80077s0hch3sh38wh2hfk7kxfau4456r3ej", 432, "overpowered").Result;
+Console.Out.WriteLine(resp2.ClientResponse.RawResponse);
+foreach (var respResponseMessage in resp2.ResponseMessages)
 {
     Console.Out.WriteLine(JsonFormatter.Default.Format(respResponseMessage));
 }
